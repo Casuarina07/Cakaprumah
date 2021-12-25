@@ -25,6 +25,10 @@ nav {
   font-size: 17px;
 }
 
+.logo a {
+  text-decoration: none;
+}
+
 .nav-links {
   display: flex;
   width: 75%;
@@ -64,7 +68,7 @@ nav {
     position: absolute;
     right: 0px;
     height: 92vh;
-    top: 8vh;
+    top: 10vh;
     background-color: #e6e6e6;
     display: flex;
     flex-direction: column;
@@ -197,10 +201,8 @@ section {
 }
 .row .col img {
   width: 80%;
+  height: 350px;
 }
-/* .row .col p {
-  margin-bottom: 10px;
-} */
 
 .row .col {
   display: flex;
@@ -310,13 +312,21 @@ form {
   background-color: #e6e6e6;
   float: right;
   margin-top: 10px;
-  padding: 5px 20px;
-  border-radius: 4px;
+  padding: 7px 20px;
+  border-radius: 10px;
+  border-style: none;
 }
 .contact-left button:hover {
   background-color: #89adfa;
   float: right;
   margin-top: 10px;
-  padding: 5px 20px;
-  border-radius: 4px;
+  padding: 7px 20px;
+  border-radius: 10px;
+}
+
+/* Services Section */
+.services {
+  background-color: #f8f8f8;
+  width: 100%;
+  padding: 30px 30px;
 }
