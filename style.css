@@ -79,6 +79,7 @@ nav {
   }
   .nav-links li {
     opacity: 0;
+    align-items: center;
   }
   .burger {
     display: block;
@@ -331,4 +332,21 @@ form {
   padding: 30px 30px;
 }
 
-/* Rent.html */
+/* Scroll to top button */
+.btnScrollToTop {
+  display: none;
+  position: fixed;
+  right: 15px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #14213d;
+  color: #e6e6e6;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+.btnScrollToTop:active {
+  background-color: #090e1b;
+}
