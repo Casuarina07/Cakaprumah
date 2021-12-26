@@ -16,20 +16,47 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Google Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav>
       <div class="logo">
-        <h4>Cakaprumah</h4>
-        <h6>by Amir Amzar</h6>
+        <a href="index.html" target="_blank">
+          <h4>Cakaprumah</h4>
+          <h6>by Amir Amzar</h6>
+        </a>
       </div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="property-listing.html">Property Stories</a></li>
+        <li><a href="property-stories.html">Property Stories</a></li>
         <li><a href="sale.html">For Sale</a></li>
         <li><a href="hdbupgraders.html">HDB Upgraders</a></li>
         <li><a href="contact.html">Contact Us</a></li>
+        <!-- <li>
+          <a href="https://www.instagram.com/cakaprumahsg/" target="_blank">
+            <i class="fa fa-instagram" style="font-size: 24px"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <i class="fa fa-whatsapp" style="font-size: 24px"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/Amir.Amzar.Mustafa" target="_blank">
+            <i class="fa fa-facebook" style="font-size: 24px"></i>
+          </a>
+        </li> -->
+        <!-- <li><button class="button">Talk NOW</button></li> -->
       </ul>
       <div class="burger">
         <div class="line1"></div>
@@ -37,13 +64,15 @@
         <div class="line3"></div>
       </div>
     </nav>
-    <script src="app.js"></script>
+    <!-- <div class="index-pic">
+      <img src="img/home-pic.jpg" style="width: 100%; height: 700px" />
+    </div> -->
+
     <!-- EVENTS -->
     <section class="events">
       <div class="title">
-        <h2>Properties</h2>
+        <h1>Listed Properties</h1>
       </div>
-      <!-- FIRST ROW -->
       <div class="row">
         <div class="col">
           <img
@@ -94,60 +123,48 @@
           <a href="#" class="ctn">Details</a>
         </div>
       </div>
-      <!-- SECOND ROW  -->
-      <div class="row">
-        <div class="col">
-          <img
-            src="https://onclickwebdesign.com/wp-content/uploads/property_4.jpg"
-            alt=""
-          />
-          <h4>Property 4</h4>
-          <p class="price">$3,400,000</p>
-          <p>6 beds | 4 baths | 4,250 sqft</p>
-          <p style="margin-top: 10px">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
-            adipisci optio cum a nostrum qui officia tenetur corporis? Ratione
-            optio fugiat corporis quasi dolorum, atque cupiditate consequatur
-            alias porro a.
-          </p>
-          <a href="#" class="ctn">Details</a>
-        </div>
-        <div class="col">
-          <img
-            src="https://onclickwebdesign.com/wp-content/uploads/property_1.jpg"
-            alt=""
-          />
-          <h4>Property 5</h4>
-          <p class="price">$3,400,000</p>
-          <p>6 beds | 4 baths | 4,250 sqft</p>
-          <p style="margin-top: 10px">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
-            adipisci optio cum a nostrum qui officia tenetur corporis? Ratione
-            optio fugiat corporis quasi dolorum, atque cupiditate consequatur
-            alias porro a.
-          </p>
-          <a href="#" class="ctn">Details</a>
-        </div>
-        <div class="col">
-          <img
-            src="https://onclickwebdesign.com/wp-content/uploads/property_2.jpg"
-            alt=""
-          />
-          <h4>Property 6</h4>
-          <p class="price">$3,400,000</p>
-          <p>6 beds | 4 baths | 4,250 sqft</p>
-          <p style="margin-top: 10px">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
-            adipisci optio cum a nostrum qui officia tenetur corporis? Ratione
-            optio fugiat corporis quasi dolorum, atque cupiditate consequatur
-            alias porro a.
-          </p>
-          <a href="#" class="ctn">Details</a>
-        </div>
-      </div>
+      <button
+        style="
+          border-style: none;
+          border-radius: 4px;
+          font-size: 2.5vmin;
+          padding: 10px 20px;
+          margin: 10px auto;
+          display: flex;
+          background-color: #14213d;
+          color: whitesmoke;
+        "
+      >
+        View All Property Listings
+      </button>
     </section>
-    <section class="listings">
-      
+
+    <!-- Scroll to top button -->
+    <button class="btnScrollToTop">
+      <i class="material-icons">arrow_upward</i>
+    </button>
+    <!-- Whatsapp button -->
+    <!-- <button class="btnWhatsapp">
+      <i class="material-icons">whatsapp</i>
+    </button> -->
+    <!-- <div class="whatsapp">
+      <a href="#">
+        <i class="material-icons">whatsapp</i>
+        <img src="/img/whatsapp.png" alt="" />
+      </a>
+      <div class="whatsapp-link">Ask Amir</div>
+    </div> -->
+    <div class="whatsapp">
+      <a href="#">
+        <img src="./img/whatsapp.png" alt="" />
+      </a>
+    </div>
+
+    <!-- FOOTER -->
+    <section class="footer">
+      <p>Contact for more information @ 912xxxx | cakaprumah@gmail.com</p>
+      <p>Copyright © 2021 Cakaprumah by Amir Amzar</p>
     </section>
+    <script src="app.js"></script>
   </body>
 </html>

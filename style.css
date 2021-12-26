@@ -353,11 +353,7 @@ form {
 .btnScrollToTop:active {
   background-color: #090e1b;
 }
-/* .btnWhatsapp {
-  border: none;
-  background-color: #e6e6e6;
-  border-radius: ;
-} */
+
 .whatsapp {
   position: fixed;
   left: 15px;
@@ -366,4 +362,17 @@ form {
 .whatsapp img {
   width: 100px;
   height: 45px;
+}
+/* Sale */
+.sale-container {
+  margin: 30px 20px;
+  padding: 10px;
+  border: solid #a8a8a8;
+  width: 90%;
+}
+
+.sale-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
