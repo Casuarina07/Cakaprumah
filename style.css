@@ -48,6 +48,10 @@ nav {
   font-size: 14px;
 }
 
+.active a {
+  color: #fca311;
+}
+
 .burger {
   display: none;
   cursor: pointer;
@@ -133,9 +137,6 @@ a:hover {
   color: #fca311;
 }
 
-.active {
-  color: red;
-}
 /* 
 .button {
   background-color: #14213d;
