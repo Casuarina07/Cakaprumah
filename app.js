@@ -1,3 +1,9 @@
+// // Initialize Firebase
+// const app = initializeApp(firebaseConfig);
+// import { initializeApp } from "firebase/app";
+
+// import firebase from "firebase";
+
 const navSlide = () => {
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".nav-links");
@@ -50,8 +56,24 @@ function scrollFunction() {
 }
 
 const app = () => {
+  // initializeApp(firebaseConfig);
   navSlide();
   scrollToTop();
 };
 
 app();
+
+// // Import the functions you need from the SDKs you need
+// import { initializeApp } from "firebase/app";
+// // TODO: Add SDKs for Firebase products that you want to use
+// // https://firebase.google.com/docs/web/setup#available-libraries
+
+// // Your web app's Firebase configuration
+// const firebaseConfig = {
+//   apiKey: "AIzaSyBYKE9QiAcp6Sx_IYdVza0iANgubTIBN-U",
+//   authDomain: "cakaprumahsg.firebaseapp.com",
+//   projectId: "cakaprumahsg",
+//   storageBucket: "cakaprumahsg.appspot.com",
+//   messagingSenderId: "170006368863",
+//   appId: "1:170006368863:web:dc59deea3d8feb931501ea",
+// };

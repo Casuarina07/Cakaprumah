@@ -36,7 +36,6 @@
       </div>
       <ul class="nav-links">
         <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
         <li><a href="property-stories.html">Property Stories</a></li>
         <li><a href="sale.html">For Sale</a></li>
         <li><a href="hdbupgraders.html">HDB Upgraders</a></li>
@@ -75,7 +74,30 @@
       </div>
     </header>
 
-    <section class="services">
+    <div class="about-container">
+      <!-- ABOUT SECTION -->
+
+      <section class="about-amir">
+        <h3 style="padding: 100dp; color: #4e4e4e; justify-items: center">
+          About Cakaprumah SG
+        </h3>
+        <div class="row">
+          <div class="col">
+            <img src="./img/about-pic.jfif" alt="" />
+          </div>
+          <div class="col">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+              enim, quo veritatis similique vel placeat ab quasi, labore nulla
+              dignissimos rem necessitatibus. Adipisci cum quia, quod dolores
+              totam sint voluptatem.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- <section class="services">
       <div class="title">
         <h1>Services</h1>
       </div>
@@ -108,7 +130,7 @@
           </p>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Scroll to top button -->
     <button class="btnScrollToTop">
@@ -140,5 +162,44 @@
       <p>Copyright © 2021 Cakaprumah SG</p>
     </section>
     <script src="app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+
+      // If you enabled Analytics in your project, add the Firebase SDK for Google Analytics
+      // import { analytics } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js";
+
+      // Add Firebase products that you want to use
+      // import { auth } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
+      // import { firestore } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
+      import { getDatabase } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js";
+      // TODO: Replace the following with your app's Firebase project configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyBYKE9QiAcp6Sx_IYdVza0iANgubTIBN-U",
+        authDomain: "cakaprumahsg.firebaseapp.com",
+        projectId: "cakaprumahsg",
+        storageBucket: "cakaprumahsg.appspot.com",
+        messagingSenderId: "170006368863",
+        appId: "1:170006368863:web:dc59deea3d8feb931501ea",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      // Get a reference to the database service
+      const database = getDatabase(app);
+      const ref = database.ref("server/saving-data/fireblog/posts");
+      // Attach an asynchronous callback to read the data at our posts reference
+      ref.on(
+        "value",
+        (snapshot) => {
+          console.log(snapshot.val());
+        },
+        (errorObject) => {
+          console.log("The read failed: " + errorObject.name);
+        }
+      );
+      console.log(database);
+    </script>
   </body>
 </html>
