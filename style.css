@@ -65,6 +65,43 @@ nav {
   transition: all 0.3s ease;
 }
 
+/* Scroll to top button */
+.btnScrollToTop {
+  display: none;
+  position: fixed;
+  right: 15px;
+  bottom: 10px;
+  width: 40px;
+  height: 40px;
+  /* border-radius: 50%; */
+  border-radius: 5px;
+  border: none;
+  background-color: #14213d;
+  color: #e6e6e6;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+.btnScrollToTop:active {
+  background-color: #090e1b;
+}
+
+.whatsapp {
+  /* display: none; */
+  position: fixed;
+  left: 15px;
+  bottom: 0px;
+}
+.whatsapp img {
+  width: 100px;
+  height: 45px;
+}
+
+/* About Section */
+.about-amir .col {
+  width: 70%;
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 900px) {
   body {
     position: relative;
@@ -99,6 +136,15 @@ nav {
 
   .contact-box {
     flex-direction: column;
+  }
+
+  .whatsapp {
+    display: block;
+  }
+
+  .about-amir .col {
+    width: 90%;
+    margin-bottom: 20px;
   }
 }
 
@@ -245,7 +291,7 @@ section {
   margin: 20px auto;
   padding: 20px auto;
   font-weight: bold;
-  font-size: 2.5vmin;
+  font-size: 2.7vmin;
 }
 
 /* ABOUT PAGE - CONTACT US */
@@ -335,35 +381,6 @@ form {
   padding: 30px 30px;
 }
 
-/* Scroll to top button */
-.btnScrollToTop {
-  display: none;
-  position: fixed;
-  right: 15px;
-  bottom: 10px;
-  width: 40px;
-  height: 40px;
-  /* border-radius: 50%; */
-  border-radius: 5px;
-  border: none;
-  background-color: #14213d;
-  color: #e6e6e6;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
-  cursor: pointer;
-}
-.btnScrollToTop:active {
-  background-color: #090e1b;
-}
-
-.whatsapp {
-  position: fixed;
-  left: 15px;
-  bottom: 0px;
-}
-.whatsapp img {
-  width: 100px;
-  height: 45px;
-}
 /* Sale */
 .sale-container {
   margin: 30px 20px;
