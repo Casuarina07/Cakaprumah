@@ -107,8 +107,102 @@ nav {
 }
 
 .about-amir .col {
-  width: 70%;
+  width: 80%;
   margin-bottom: 20px;
+}
+
+.about-amir img {
+  padding: 10px 50px;
+}
+
+/* CONTACT US */
+.contact-main-container {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.contact-box {
+  background-color: #14213d;
+  display: flex;
+  color: whitesmoke;
+}
+
+.contact-left {
+  flex-basis: 60%;
+  padding: 40px 60px;
+}
+
+.contact-left h3 {
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+
+.contact-right {
+  flex-basis: 40%;
+  padding: 40px 60px;
+  background-color: #e6e6e6;
+  color: rgb(58, 57, 57);
+}
+
+.contact-right h3 {
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+
+.contact-main-container h1 {
+  margin-bottom: 10px;
+  color: rgb(58, 57, 57);
+}
+
+.contact-main-container p {
+  margin-bottom: 40px;
+}
+
+.input-row .input-group {
+  flex-basis: 45%;
+}
+
+input {
+  width: 100%;
+  outline: none;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  /* font-size: small; */
+}
+.contact-details-row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.contact-details-row a {
+  padding: 10px 10px;
+}
+.contact-left button {
+  background-color: #e6e6e6;
+  float: right;
+  margin-top: 10px;
+  padding: 7px 20px;
+  border-radius: 10px;
+  border-style: none;
+}
+.contact-left button:hover {
+  background-color: #89adfa;
+  float: right;
+  margin-top: 10px;
+  padding: 7px 20px;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 900px) {
@@ -154,6 +248,20 @@ nav {
   .about-amir .col {
     width: 90%;
     margin-bottom: 20px;
+  }
+  .about-amir img {
+    padding: 10px 0px;
+  }
+
+  .contact-left {
+    flex-basis: 60%;
+    padding: 40px 30px;
+  }
+  .contact-right {
+    flex-basis: 40%;
+    padding: 40px 30px;
+    background-color: #e6e6e6;
+    color: rgb(58, 57, 57);
   }
 }
 
@@ -260,7 +368,7 @@ section {
 }
 .row .col img {
   width: 80%;
-  height: 350px;
+  height: 300px;
 }
 
 .row .col {
@@ -301,86 +409,6 @@ section {
   padding: 20px auto;
   font-weight: bold;
   font-size: 2.7vmin;
-}
-
-/* CONTACT US */
-.contact-main-container {
-  width: 80%;
-  margin: 50px auto;
-}
-
-.contact-box {
-  background-color: #14213d;
-  display: flex;
-  color: whitesmoke;
-}
-
-.contact-left {
-  flex-basis: 60%;
-  padding: 40px 60px;
-}
-
-.contact-left h3 {
-  text-decoration: underline;
-  margin-bottom: 15px;
-}
-
-.contact-right {
-  flex-basis: 40%;
-  padding: 40px 60px;
-  background-color: #e6e6e6;
-  color: rgb(58, 57, 57);
-}
-
-.contact-right h3 {
-  text-decoration: underline;
-  margin-bottom: 15px;
-}
-
-.contact-main-container h1 {
-  margin-bottom: 10px;
-  color: rgb(58, 57, 57);
-}
-
-.contact-main-container p {
-  margin-bottom: 40px;
-}
-
-.input-row .input-group {
-  flex-basis: 45%;
-}
-
-input {
-  width: 100%;
-  outline: none;
-  padding-bottom: 5px;
-  margin-bottom: 5px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-details {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-.contact-left button {
-  background-color: #e6e6e6;
-  float: right;
-  margin-top: 10px;
-  padding: 7px 20px;
-  border-radius: 10px;
-  border-style: none;
-}
-.contact-left button:hover {
-  background-color: #89adfa;
-  float: right;
-  margin-top: 10px;
-  padding: 7px 20px;
-  border-radius: 10px;
 }
 
 /* Services Section */
