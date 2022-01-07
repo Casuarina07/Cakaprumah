@@ -28,6 +28,11 @@ nav {
 
 .logo a {
   text-decoration: none;
+  color: rgb(29, 29, 29);
+}
+
+.logo a:hover {
+  color: rgb(29, 29, 29);
 }
 
 .nav-links {
@@ -349,10 +354,15 @@ header {
   margin-bottom: 20px;
 }
 
+.about-amir .row .col img {
+  width: 80%;
+  height: 350px;
+}
+
 /* Events */
 section {
   width: 80%;
-  margin: 80px auto;
+  margin: 50px auto;
 }
 .title {
   text-align: center;
@@ -366,15 +376,17 @@ section {
   width: 100%;
   justify-content: space-between;
 }
-.row .col img {
-  width: 80%;
-  height: 300px;
+.events .row .col img {
+  width: 100%;
+  height: 230px;
+  padding: 0px 10px;
 }
 
 .row .col {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .events .row {
@@ -383,14 +395,17 @@ section {
 .row .col h4 {
   font-size: 3vmin;
   color: #243b6b;
-  margin: 20px auto;
+  margin-top: 10px;
+  /* margin: 20px auto; */
 }
 .row .col p {
   color: #3c5fac;
-  padding: 0px 40px;
+  text-align: left;
+  padding: 0px 5px;
 }
 .events .ctn {
   margin-top: 30px;
+  font-size: 15px;
 }
 
 /* Footer */

@@ -219,45 +219,28 @@
       <p>Contact for more information @ 97402482 | cakaprumah@gmail.com</p>
       <p>Copyright © 2021 Cakaprumah SG</p>
     </section>
-    <script src="app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+
     <script type="module">
+      // Import the functions you need from the SDKs you need
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
 
-      // If you enabled Analytics in your project, add the Firebase SDK for Google Analytics
-      // import { analytics } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js";
-
-      // Add Firebase products that you want to use
-      // import { auth } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
-      // import { firestore } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
-      import { getDatabase } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js";
-      // TODO: Replace the following with your app's Firebase project configuration
+      // Your web app's Firebase configuration
       const firebaseConfig = {
-        apiKey: "AIzaSyBYKE9QiAcp6Sx_IYdVza0iANgubTIBN-U",
-        authDomain: "cakaprumahsg.firebaseapp.com",
-        projectId: "cakaprumahsg",
-        storageBucket: "cakaprumahsg.appspot.com",
-        messagingSenderId: "170006368863",
-        appId: "1:170006368863:web:dc59deea3d8feb931501ea",
+        apiKey: "AIzaSyAk8Ta3Hzl-MmHEhvB-LgHmJ_ueHL7IsL4",
+        authDomain: "cakaprumahsg-amir.firebaseapp.com",
+        projectId: "cakaprumahsg-amir",
+        storageBucket: "cakaprumahsg-amir.appspot.com",
+        messagingSenderId: "271026251179",
+        appId: "1:271026251179:web:c08a567b194ae6ead89eee",
       };
 
       // Initialize Firebase
       const app = initializeApp(firebaseConfig);
-      // Get a reference to the database service
-      const database = getDatabase(app);
-      const ref = database.ref("server/saving-data/fireblog/posts");
-      // Attach an asynchronous callback to read the data at our posts reference
-      ref.on(
-        "value",
-        (snapshot) => {
-          console.log(snapshot.val());
-        },
-        (errorObject) => {
-          console.log("The read failed: " + errorObject.name);
-        }
-      );
-      console.log(database);
     </script>
+
+    <script src="app.js"></script>
   </body>
 </html>
