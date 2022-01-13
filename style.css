@@ -210,6 +210,16 @@ form {
   border-radius: 10px;
 }
 
+.header-content-hdbupgraders {
+  width: 50%;
+  background-color: #243b6b;
+  padding: 20px 50px;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media screen and (max-width: 900px) {
   body {
     position: relative;
@@ -270,6 +280,17 @@ form {
   }
   .sale-container img {
     width: 90%;
+  }
+
+  .header-content-hdbupgraders {
+    width: 80%;
+    background-color: #243b6b;
+    padding: 20px 50px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
   }
 }
 
@@ -480,4 +501,47 @@ section {
 .btnDetails:hover {
   background-color: #fca311;
   color: #14213d;
+}
+
+/* HDB Upgraders Page */
+.header-hdbupgraders header {
+  width: 100%;
+  height: 75vh;
+  background-image: url(./img/property1.jpg);
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  color: #e6e6e6;
+  /* justify-content: center; */
+  text-align: center;
+}
+
+.header-content-hdbupgraders h2 {
+  color: #cccccc;
+}
+.header-content-hdbupgraders h1 {
+  color: #f8f8f8;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-style: italic;
+  font-size: x-large;
+}
+.header-footer {
+  background-color: #cccccc;
+  width: 100%;
+  text-align: center;
+  color: #243b6b;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.hdbupgraders-part1 {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.hdbupgraders-part1 .hdb-p1-1 {
+  font-size: 20px;
 }
