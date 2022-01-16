@@ -240,7 +240,8 @@ form {
 .hdbupgraders-part2 {
   padding-left: 10px;
   padding-right: 10px;
-  width: 100%;
+  width: 90%;
+  margin: auto;
 }
 
 .hdbupgraders-part2-container {
@@ -274,7 +275,7 @@ form {
 
 .case-study {
   padding: 40px 40px;
-  width: 80%;
+  width: 70%;
   margin: auto;
   align-items: center;
 }
@@ -287,6 +288,20 @@ form {
   width: 200px;
   height: 220px;
   margin-bottom: 10px;
+}
+
+.hdbupgraders-part3 {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 70%;
+  margin: auto;
+}
+
+.hdbupgraders-part3-container {
+  background-color: #f8f8f8;
+  margin-right: 10px;
+  border-radius: 10px;
+  padding: 30px 15px;
 }
 
 @media screen and (max-width: 900px) {
@@ -375,6 +390,16 @@ form {
     margin-bottom: 20px;
     border-radius: 10px;
     padding: 30px 15px;
+  }
+
+  .case-study {
+    padding: 40px 40px;
+    width: 90%;
+  }
+  .hdbupgraders-part3 {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 90%;
   }
 }
 
