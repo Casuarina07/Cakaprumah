@@ -605,6 +605,8 @@ section {
   border: none;
   transition: 0.5s;
   font-size: medium;
+  text-align: center;
+  text-decoration: none;
 }
 
 .btnDetails:hover {
