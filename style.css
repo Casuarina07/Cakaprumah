@@ -344,6 +344,31 @@ form {
   background-size: cover;
 }
 
+/* FOR SALE - DETAILS */
+.image-slider-container {
+  width: 60%;
+  margin: auto;
+  /* border: 5px solid black; */
+  margin-bottom: 20px;
+}
+
+.image-slide {
+  display: flex;
+  width: 100%;
+  height: 55vh;
+}
+
+.image-slide img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.details {
+  width: 60%;
+  margin: auto;
+}
+
 @media screen and (max-width: 900px) {
   body {
     position: relative;
@@ -451,6 +476,16 @@ form {
     background-size: cover;
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+  .image-slider-container {
+    width: 80%;
+    margin: auto;
+    /* border: 5px solid black; */
+    margin-bottom: 20px;
+  }
+  .details {
+    width: 80%;
+    margin: auto;
   }
 }
 
