@@ -91,25 +91,54 @@ function database() {
 }
 
 const app = () => {
-  // initializeApp(firebaseConfig);
   navSlide();
   scrollToTop();
-  // database();
 };
 
 app();
 
-// // Import the functions you need from the SDKs you need
-// import { initializeApp } from "firebase/app";
-// // TODO: Add SDKs for Firebase products that you want to use
-// // https://firebase.google.com/docs/web/setup#available-libraries
+//Check if the DOM is full loaded
+document.addEventListener("DOMContentLoaded", (e) => {
+  if (location.href.includes("property-stories.html")) {
+    getStories();
+  }
+});
 
-// // Your web app's Firebase configuration
-// const firebaseConfig = {
-//   apiKey: "AIzaSyBYKE9QiAcp6Sx_IYdVza0iANgubTIBN-U",
-//   authDomain: "cakaprumahsg.firebaseapp.com",
-//   projectId: "cakaprumahsg",
-//   storageBucket: "cakaprumahsg.appspot.com",
-//   messagingSenderId: "170006368863",
-//   appId: "1:170006368863:web:dc59deea3d8feb931501ea",
-// };
+//RETRIEVE PROPERTY STORIES - property-stories.html
+const getStories = async () => {
+  let postsArray = [];
+  let docs = await firebase
+    .firestore()
+    .collection("stories")
+    .get()
+    .catch((err) => console.log(err));
+
+  docs.forEach((doc) => {
+    postsArray.push({ id: doc.id, data: doc.data() });
+  });
+
+  createChildren(postsArray);
+};
+
+const createChildren = async (arr) => {
+  //check if the post element is in the current HTML
+  if (posts != null) {
+    arr.map((post) => {
+      let div = document.createElement("div");
+      let cover = document.createElement("div");
+      let anchor = document.createElement("a");
+      let anchorNode = document.createTextNode(post.data.title);
+      anchor.setAttribute("href", "post.html#/" + post.id);
+      anchor.appendChild(anchorNode);
+      let content = document.createElement("p");
+      content.innerText = post.data.content;
+
+      cover.style.backgroundImage = "url(" + post.data.postImage + ")";
+      div.classList.add("post");
+      div.appendChild(cover);
+      div.appendChild(anchor);
+      div.appendChild(content);
+      posts.appendChild(div);
+    });
+  }
+};
