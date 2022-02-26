@@ -1,18 +1,18 @@
 //firebase configuration
-const config = {
-  apiKey: "AIzaSyAk8Ta3Hzl-MmHEhvB-LgHmJ_ueHL7IsL4",
-  authDomain: "cakaprumahsg-amir.firebaseapp.com",
-  databaseURL: "https://cakaprumahsg-amir-default-rtdb.firebaseio.com",
-  projectId: "cakaprumahsg-amir",
-  storageBucket: "cakaprumahsg-amir.appspot.com",
-  messagingSenderId: "271026251179",
-  appId: "1:271026251179:web:c08a567b194ae6ead89eee",
-  measurementId: "G-8XN8C70GYK",
-};
+// const config = {
+//   apiKey: "AIzaSyAk8Ta3Hzl-MmHEhvB-LgHmJ_ueHL7IsL4",
+//   authDomain: "cakaprumahsg-amir.firebaseapp.com",
+//   databaseURL: "https://cakaprumahsg-amir-default-rtdb.firebaseio.com",
+//   projectId: "cakaprumahsg-amir",
+//   storageBucket: "cakaprumahsg-amir.appspot.com",
+//   messagingSenderId: "271026251179",
+//   appId: "1:271026251179:web:c08a567b194ae6ead89eee",
+//   measurementId: "G-8XN8C70GYK",
+// };
 
-firebase.initializeApp(config);
+// firebase.initializeApp(config);
 
-const firestore = firebase.firestore();
+// const firestore = firebase.firestore();
 
 const navSlide = () => {
   const burger = document.querySelector(".burger");
@@ -65,30 +65,30 @@ function scrollFunction() {
   }
 }
 
-function database() {
-  console.log("DATABASE TESTING");
-  //get all stories
-  // db.collection("stories")
-  //   .get()
-  //   .then((querySnapshot) => {
-  //     querySnapshot.forEach((doc) => {
-  //       console.log(doc.data());
-  //     });
-  //   });
-  const firebaseConfig = {
-    apiKey: "AIzaSyAk8Ta3Hzl-MmHEhvB-LgHmJ_ueHL7IsL4",
-    authDomain: "cakaprumahsg-amir.firebaseapp.com",
-    projectId: "cakaprumahsg-amir",
-    storageBucket: "cakaprumahsg-amir.appspot.com",
-    messagingSenderId: "271026251179",
-    appId: "1:271026251179:web:c08a567b194ae6ead89eee",
-    measurementId: "G-8XN8C70GYK",
-  };
-  firebase.initializeApp(firebaseConfig);
-  const db = firebase.firestore();
-  const booksRef = firebase.firestore().collection("stories");
-  console.log(booksRef);
-}
+// function database() {
+//   console.log("DATABASE TESTING");
+//   //get all stories
+//   // db.collection("stories")
+//   //   .get()
+//   //   .then((querySnapshot) => {
+//   //     querySnapshot.forEach((doc) => {
+//   //       console.log(doc.data());
+//   //     });
+//   //   });
+//   const firebaseConfig = {
+//     apiKey: "AIzaSyAk8Ta3Hzl-MmHEhvB-LgHmJ_ueHL7IsL4",
+//     authDomain: "cakaprumahsg-amir.firebaseapp.com",
+//     projectId: "cakaprumahsg-amir",
+//     storageBucket: "cakaprumahsg-amir.appspot.com",
+//     messagingSenderId: "271026251179",
+//     appId: "1:271026251179:web:c08a567b194ae6ead89eee",
+//     measurementId: "G-8XN8C70GYK",
+//   };
+//   firebase.initializeApp(firebaseConfig);
+//   const db = firebase.firestore();
+//   const booksRef = firebase.firestore().collection("stories");
+//   console.log(booksRef);
+// }
 
 const app = () => {
   navSlide();
@@ -97,48 +97,48 @@ const app = () => {
 
 app();
 
-//Check if the DOM is full loaded
-document.addEventListener("DOMContentLoaded", (e) => {
-  if (location.href.includes("property-stories.html")) {
-    getStories();
-  }
-});
+// //Check if the DOM is full loaded
+// document.addEventListener("DOMContentLoaded", (e) => {
+//   if (location.href.includes("property-stories.html")) {
+//     getStories();
+//   }
+// });
 
-//RETRIEVE PROPERTY STORIES - property-stories.html
-const getStories = async () => {
-  let postsArray = [];
-  let docs = await firebase
-    .firestore()
-    .collection("stories")
-    .get()
-    .catch((err) => console.log(err));
+// //RETRIEVE PROPERTY STORIES - property-stories.html
+// const getStories = async () => {
+//   let postsArray = [];
+//   let docs = await firebase
+//     .firestore()
+//     .collection("stories")
+//     .get()
+//     .catch((err) => console.log(err));
 
-  docs.forEach((doc) => {
-    postsArray.push({ id: doc.id, data: doc.data() });
-  });
+//   docs.forEach((doc) => {
+//     postsArray.push({ id: doc.id, data: doc.data() });
+//   });
 
-  createChildren(postsArray);
-};
+//   createChildren(postsArray);
+// };
 
-const createChildren = async (arr) => {
-  //check if the post element is in the current HTML
-  if (posts != null) {
-    arr.map((post) => {
-      let div = document.createElement("div");
-      let cover = document.createElement("div");
-      let anchor = document.createElement("a");
-      let anchorNode = document.createTextNode(post.data.title);
-      anchor.setAttribute("href", "post.html#/" + post.id);
-      anchor.appendChild(anchorNode);
-      let content = document.createElement("p");
-      content.innerText = post.data.content;
+// const createChildren = async (arr) => {
+//   //check if the post element is in the current HTML
+//   if (posts != null) {
+//     arr.map((post) => {
+//       let div = document.createElement("div");
+//       let cover = document.createElement("div");
+//       let anchor = document.createElement("a");
+//       let anchorNode = document.createTextNode(post.data.title);
+//       anchor.setAttribute("href", "post.html#/" + post.id);
+//       anchor.appendChild(anchorNode);
+//       let content = document.createElement("p");
+//       content.innerText = post.data.content;
 
-      cover.style.backgroundImage = "url(" + post.data.postImage + ")";
-      div.classList.add("post");
-      div.appendChild(cover);
-      div.appendChild(anchor);
-      div.appendChild(content);
-      posts.appendChild(div);
-    });
-  }
-};
+//       cover.style.backgroundImage = "url(" + post.data.postImage + ")";
+//       div.classList.add("post");
+//       div.appendChild(cover);
+//       div.appendChild(anchor);
+//       div.appendChild(content);
+//       posts.appendChild(div);
+//     });
+//   }
+// };
