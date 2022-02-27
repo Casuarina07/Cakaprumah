@@ -90,6 +90,20 @@ function scrollFunction() {
 //   console.log(booksRef);
 // }
 
+function submitForm() {
+  $.ajax({
+    url: "https://api.apispreadsheets.com/data/OmtpOUGctBuFj8IM/",
+    type: "post",
+    data: $("#enquiryForm").serializeArray(),
+    success: function () {
+      alert("Form Data Submitted :)");
+    },
+    error: function () {
+      alert("There was an error :(");
+    },
+  });
+}
+
 const app = () => {
   navSlide();
   scrollToTop();

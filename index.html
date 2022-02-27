@@ -89,17 +89,35 @@
       <div class="contact-box">
         <div class="contact-left">
           <h3>Send an enquiry</h3>
-          <form>
-            <label>Name</label>
-            <input type="text" />
-            <label>Phone</label>
-            <input type="text" />
-            <label>Email</label>
-            <input type="email" />
-            <label>Enquiry</label>
-            <textarea rows="4" cols="50"> </textarea>
+          <form
+            action="mailto:casuarinaaa@gmail.com"
+            method="post"
+            enctype="text/plain"
+            id="enquiryForm"
+          >
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
+            <label for="phone">Phone</label>
+            <input type="text" name="phone" id="phone" />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+            <label for="enquiry">Enquiry</label>
+            <textarea rows="4" cols="50" name="enquiry" id="enquiry">
+            </textarea>
           </form>
-          <button>Submit</button>
+          <button onclick="submitForm()">Submit</button>
+          <!-- <input
+            type="submit"
+            name="submit"
+            value="Submit"
+            style="
+              width: 20%;
+              border-radius: 10px;
+              border-style: none;
+              padding: 5px 5px;
+              margin-top: 10px;
+            "
+          /> -->
         </div>
         <div class="contact-right">
           <h3>Reach us</h3>
@@ -159,8 +177,13 @@
 
     <!-- <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script> -->
-
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="”sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU"
+      ="”"
+      crossorigin="”anonymous”"
+    ></script>
     <script src="app.js"></script>
-    <script type="module" src="firebase-connection.js"></script>
   </body>
 </html>
