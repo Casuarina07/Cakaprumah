@@ -102,9 +102,11 @@ span {
   bottom: 0px;
 }
 .whatsapp img {
-  width: 200px;
-  height: 80px;
+  width: 170px;
+  height: 60px;
 }
+/* 100
+50 */
 
 /* About Section */
 .about-container {
@@ -556,7 +558,7 @@ header {
 .header-content {
   margin-left: 10%;
   margin-bottom: 80%;
-  color: #999999;
+  color: #0a37b1;
 }
 .header-content h2 {
   font-size: 4vmin;
