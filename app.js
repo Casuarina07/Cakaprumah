@@ -96,11 +96,9 @@ function submitForm() {
     type: "post",
     data: $("#enquiryForm").serializeArray(),
     success: function () {
-      alert("Form Data Submitted :)");
+      alert("Enquiry submitted :)");
     },
-    error: function () {
-      alert("There was an error :(");
-    },
+    error: function () {},
   });
 }
 
