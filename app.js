@@ -65,31 +65,6 @@ function scrollFunction() {
   }
 }
 
-// function database() {
-//   console.log("DATABASE TESTING");
-//   //get all stories
-//   // db.collection("stories")
-//   //   .get()
-//   //   .then((querySnapshot) => {
-//   //     querySnapshot.forEach((doc) => {
-//   //       console.log(doc.data());
-//   //     });
-//   //   });
-//   const firebaseConfig = {
-//     apiKey: "AIzaSyAk8Ta3Hzl-MmHEhvB-LgHmJ_ueHL7IsL4",
-//     authDomain: "cakaprumahsg-amir.firebaseapp.com",
-//     projectId: "cakaprumahsg-amir",
-//     storageBucket: "cakaprumahsg-amir.appspot.com",
-//     messagingSenderId: "271026251179",
-//     appId: "1:271026251179:web:c08a567b194ae6ead89eee",
-//     measurementId: "G-8XN8C70GYK",
-//   };
-//   firebase.initializeApp(firebaseConfig);
-//   const db = firebase.firestore();
-//   const booksRef = firebase.firestore().collection("stories");
-//   console.log(booksRef);
-// }
-
 function submitForm() {
   $.ajax({
     url: "https://api.apispreadsheets.com/data/OmtpOUGctBuFj8IM/",
