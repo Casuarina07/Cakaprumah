@@ -561,7 +561,7 @@ header {
   color: #0a37b1;
 }
 .header-content h2 {
-  font-size: 4vmin;
+  font-size: 5vmin;
 }
 .header-content h1 {
   font-size: 7vmin;
@@ -574,8 +574,8 @@ header {
 }
 
 .ctn {
-  background-color: #e6e6e6;
-  color: #14213d;
+  background-color: #6b6a6a;
+  color: #f7f4f4;
   padding: 7px 10px;
   font-weight: bold;
   margin-bottom: 5px;
