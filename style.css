@@ -567,7 +567,9 @@ header {
   font-size: 7vmin;
   margin-top: 20px;
   margin-bottom: 10px;
-  font-family: "Anton", sans-serif;
+  /* font-family: "Anton", sans-serif; */
+  color: #5338ec;
+  font-family: "Lobster", cursive;
 }
 
 .ctn {
