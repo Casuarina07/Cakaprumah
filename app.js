@@ -71,7 +71,10 @@ function submitForm() {
     type: "post",
     data: $("#enquiryForm").serializeArray(),
     success: function () {
-      alert("Enquiry submitted :)");
+      // alert("Enquiry submitted :)");
+      if (confirm("Enquiry submitted :)")) {
+        window.location.reload();
+      }
     },
     error: function () {},
   });
