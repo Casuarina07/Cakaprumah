@@ -56,17 +56,29 @@
       <div class="contact-box">
         <div class="contact-left">
           <h3>Send an enquiry</h3>
-          <form>
-            <label>Name</label>
-            <input type="text" />
-            <label>Phone</label>
-            <input type="text" />
-            <label>Email</label>
-            <input type="email" />
-            <label>Enquiry</label>
-            <textarea rows="4" cols="50"> </textarea>
+          <form
+            action="mailto:casuarinaaa@gmail.com"
+            method="post"
+            enctype="text/plain"
+            id="enquiryForm"
+          >
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" autocomplete="off" />
+            <label for="phone">Phone</label>
+            <input type="text" name="phone" id="phone" autocomplete="off" />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" autocomplete="off" />
+            <label for="enquiry">Enquiry</label>
+            <textarea
+              rows="4"
+              cols="50"
+              name="enquiry"
+              id="enquiry"
+              autocomplete="off"
+            >
+            </textarea>
           </form>
-          <button>Submit</button>
+          <button onclick="submitForm()">Submit</button>
         </div>
         <div class="contact-right">
           <h3>Reach us</h3>
