@@ -568,10 +568,9 @@ header {
   font-size: 7vmin;
   /* margin-top: 10px; */
   margin-bottom: 20px;
-  /* font-family: "Anton", sans-serif; */
+  font-family: "Anton", sans-serif;
   /* color: #5338ec; */
   /* font-family: "Lobster", cursive; */
-  font-family: "Caveat", cursive;
   background-color: black;
 }
 
