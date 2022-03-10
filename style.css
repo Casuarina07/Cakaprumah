@@ -547,7 +547,7 @@ a:hover {
 header {
   width: 100%;
   height: 100vh;
-  background-image: url(./img/home-pic.jpg);
+  background-image: url(./img/amir.jpeg);
   background-position: bottom;
   background-size: cover;
   display: flex;
@@ -558,7 +558,7 @@ header {
 .header-content {
   margin-left: 10%;
   margin-bottom: 80%;
-  color: #0a37b1;
+  /* color: #0a37b1; */
 }
 .header-content h2 {
   font-size: 5vmin;
@@ -568,7 +568,7 @@ header {
   margin-top: 10px;
   margin-bottom: 10px;
   /* font-family: "Anton", sans-serif; */
-  color: #5338ec;
+  /* color: #5338ec; */
   /* font-family: "Lobster", cursive; */
   font-family: "Caveat", cursive;
 }
