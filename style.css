@@ -562,23 +562,24 @@ header {
 }
 .header-content h2 {
   font-size: 5vmin;
+  background-color: black;
 }
 .header-content h1 {
   font-size: 7vmin;
   /* margin-top: 10px; */
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   /* font-family: "Anton", sans-serif; */
   /* color: #5338ec; */
   /* font-family: "Lobster", cursive; */
   font-family: "Caveat", cursive;
+  background-color: black;
 }
 
 .ctn {
-  background-color: #6b6a6a;
-  color: #f7f4f4;
+  background-color: white;
+  color: black;
   padding: 7px 10px;
   font-weight: bold;
-  margin-bottom: 5px;
   border: none;
   transition: 1s;
   font-size: medium;
